@@ -1,7 +1,7 @@
 
 // Set the date we're counting down to
 var countDownDate = new Date("Sep 26, 2020 15:00 GMT -5").getTime();
-
+//var countDownDate = new Date("December 5, 2019 11:40 GMT -6").getTime();
 ( function calcCountDown() {
 
 
@@ -46,11 +46,14 @@ var countDownDate = new Date("Sep 26, 2020 15:00 GMT -5").getTime();
    
     
    document.getElementById("countdownjs").innerHTML = "Count Down to Pigger 2020! <br>"
-     + days + txtdays + hours + txthours + minutes + txtminutes ;
+     + days + txtdays + hours + txthours + minutes + txtminutes + seconds + txtseconds;
 
     // set timeout to 15 seconds - it's just minutes now but make sure to change this if it goes back to seconds
-    setTimeout(calcCountDown, 15000);
+    setTimeout(calcCountDown, 1000);
 
+  } else {
+    document.getElementById("countdownjs").innerHTML = ""
+  
   }
   
   }) ();

@@ -3,21 +3,66 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/styles.css">
-<title>Pigger2020</title>
 
+<!-- Place your kit's code here -->
+<script src="https://kit.fontawesome.com/d02bb6580d.js" crossorigin="anonymous"></script>
+<!--Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+
+<!-- Custom Styling -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- JQuery -->
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<title>Pigger2020</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="img/PiggerLogo.png" alt="Logo" >
+            <h1 class="logo-text"><span>Pigger</span>2020</h1>
+        </div>
+        
+        <i class = "fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <!--<li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li> -->
+            <!--
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Joe Orzechowski
+                    <i class="fa fa-chevron-down" style="font-size: .8em"></i>
+                
 
-
-<img src="./img/PiggerHeadCollage4.png" width="2000" height="1200" alt="Pigger 2020 Collage">
+                </a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
+              
+                </ul>
+            </li>
+        -->
+        </ul>
+    </header>
 
 <div class="countdown">
     <p id="countdownjs"></p>
 </div>
 
-<p>Resize the browser window to see how the image will scale.</p>
+<img class="pigger-collage" src="./img/PiggerHeadCollage4.png" width="2000" height="1200" alt="Pigger 2020 Collage">
+
+<p class="resize-txt">Resize the browser window to see how the image will scale.</p>
 
 <script src="js/countdown.js"></script>
+<script src="js/scripts.js"></script>
 
 
 </body>
