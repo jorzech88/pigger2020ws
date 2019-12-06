@@ -67,7 +67,7 @@ header ul li ul {
 }
 
 header ul li:hover ul {
-  display: block
+  display: block;
 }
 
 header ul li ul li {
@@ -77,7 +77,7 @@ header ul li ul li {
 header ul li ul li a {
   padding: 10px;
   color: #444;
-  background: black
+  background: black;
 }
 
 header ul li ul li a.logout {
@@ -116,14 +116,14 @@ header .menu-toggle {
 }
 
 .resize-txt {
-  color: white
+  color: white;
 }
 
 
 #countdownjs {
 
     display: inline;
-    font-size: 200%;
+    font-size: 150%;
   
 }
 
@@ -133,7 +133,15 @@ header .menu-toggle {
 @media only screen and (max-width: 856px) {
   header {
       position: relative;
+      height: 46px;
   }
+ 
+
+  header .logo-text {
+   
+    font-size: 150%;
+  }
+
   header ul {
       width: 100%;
       background: black;
@@ -179,6 +187,12 @@ header .menu-toggle {
       margin-left: .5em;
   
   }
+  #countdownjs {
+    display: inline;
+    font-size: 100%;
+  }
+  
+}
 
 /* AUTH PAGES */
 .auth-content {
@@ -190,7 +204,6 @@ header .menu-toggle {
 
 }
 
-}
 
 
 
