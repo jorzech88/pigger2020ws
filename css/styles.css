@@ -148,17 +148,49 @@ header .menu-toggle {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(433px, 2fr));
   grid-gap: 1rem;
+  color: white;
 }
 
 .grid-item {
   
-  padding: 5%;
+  padding: 3%;
   font-size: 125%;
   text-align: center;
+
+  /*
   border-style: solid;
   border-color: red;
   border-width: 1px;
+  */
+}
+
+.schedule {
+  font-size: 125%;
+  text-align: center;
   color: white;
+}
+
+.schedule-txt {
+  display: inline-block;
+  text-align: left;
+  padding: 3%;
+  
+  /*
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  */
+}
+
+.schedule-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.welcome-txt {
+  text-align: left;
 }
 
 
