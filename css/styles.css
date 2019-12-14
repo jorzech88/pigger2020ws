@@ -109,6 +109,21 @@ header .menu-toggle {
 
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("../img/PiggerHeadCollage4.png");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center; 
+  /* background-position: 0% -66px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .countdown {
   text-align: center;
   color: white;
@@ -130,9 +145,8 @@ header .menu-toggle {
 .welcome-txt {
   display: block;
   color: white;
-  font-size: 20px;
+  font-size: 150%;
   margin-left: 40px;
-  line-height: 1.5;
 }
 
 .welcome-hd {
@@ -189,9 +203,6 @@ header .menu-toggle {
   width: 50%;
 }
 
-.welcome-txt {
-  text-align: left;
-}
 
 
 /* Media queries */
