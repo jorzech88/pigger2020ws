@@ -45,7 +45,7 @@ var countDownDate = new Date("Sep 26, 2020 15:00 GMT -5").getTime();
     // Output the result in an element with id="countdownjs"
    
     
-   document.getElementById("countdownjs").innerHTML = "Count Down to Pigger 2020! [test 9]<br>"
+   document.getElementById("countdownjs").innerHTML = "Count Down to Pigger 2020! <br>"
      + days + txtdays + hours + txthours + minutes + txtminutes + seconds + txtseconds;
 
     // set timeout to 15 seconds - it's just minutes now but make sure to change this if it goes back to seconds

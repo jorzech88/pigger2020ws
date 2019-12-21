@@ -2,6 +2,10 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hopefully these will control the cache while we are updating -->
+  <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Place your kit's code here -->
@@ -29,7 +33,7 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Activites</a></li>
-                <li><a href="#">Tickets & Stuff</a></li>
+                <li><a href="#tickets">Tickets & Stuff</a></li>
                 
                 <!--<li><a href="#">Sign Up</a></li>
                 <li><a href="#">Login</a></li> -->
@@ -149,6 +153,34 @@
           </p>
         </div>
     </div>
+
+    <p class="tickets-stuff-hd" id="tickets">Tickets & stuff</p>
+    
+    <div class="item-container">
+      <div class="item">
+          <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="NXN89BTNX5Q6E">
+              <table>
+                  <div class="tshirt">
+                      <img src="img/Pigger2020T-400x378.png" alt="Pigger 2020 T-Shirts">
+                      <h4>Pigger 2020 T-Shirt</h4>
+                  </div>
+                  <tr><td><input type="hidden" name="on0" value="Pigger 2020 T-Shirts">Sizes</td></tr><tr><td><select name="os0">
+                      <option value="Small">Small $15.00 USD</option>
+                      <option value="Medium">Medium $15.00 USD</option>
+                      <option value="Large">Large $15.00 USD</option>
+                      <option value="X-Large">X-Large $15.00 USD</option>
+                      <option value="2X-Large">2X-Large $17.00 USD</option>
+                      <option value="3X-Large">3X-Large $17.00 USD</option>
+                  </select> </td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+      </div>
+  </div>
 
 
     <script src="js/countdown.js"></script>

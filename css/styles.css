@@ -164,6 +164,7 @@ header .menu-toggle {
 
 .welcome-hd {
   text-align: center;
+  color: white;
 }
 
 .grid-container {
@@ -216,6 +217,32 @@ header .menu-toggle {
   width: 50%;
 }
 
+.tickets-stuff-hd {
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 150%;
+  margin-left: 40px;
+}
+
+.item-container {
+  display: grid
+  padding 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.item {
+  display: grid;
+}
+.tshirt {
+  border: 1px solid black;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 20px;
+  max-width: 450px;
+}
 
 
 /* Media queries */
@@ -240,7 +267,7 @@ header .menu-toggle {
   }
 
   .showing {
-      max-height: 100em;
+      max-height: 100em; 
       border: 1px solid red
   }
 
@@ -276,6 +303,10 @@ header .menu-toggle {
      
       margin-left: .5em;
   
+  }
+
+  .countdown {
+    top: 46px;
   }
   #countdownjs {
     display: inline;
