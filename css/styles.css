@@ -113,10 +113,6 @@ header .menu-toggle {
   display: none;
 }
 
-.countdown {
-  z-index: 100;
-}
-
 .pigger-collage {
   width: 100%;
   height: auto;
@@ -229,7 +225,8 @@ section {
   .two-col {
     width: 100%;
     padding: 0;
-    text-align: center;
+    text-align: left;
+    font-size: 100%;
   }
 }
 
@@ -256,6 +253,7 @@ section {
   width: 100%;
   background-color: black;
   top: 66px;
+  z-index: 99;
 
 }
 
