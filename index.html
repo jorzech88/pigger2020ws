@@ -10,50 +10,45 @@
 
   <!-- Place your kit's code here -->
   <script src="https://kit.fontawesome.com/d02bb6580d.js" crossorigin="anonymous"></script>
-  <!--Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
 
-  <!-- JQuery -->
-  <!--
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <title>Pigger2020 Reunion</title>
   </head>
   <body>
       <header>
+          <nav class="navbar">
             <div class="logo">
-                <img class="logo-img" src="img/PiggerLogo.png" alt="Logo" >
-                <h1 class="logo-text"><span>Pigger</span>2020</h1>
+              <img class="logo-img" src="img/PiggerLogo.png" alt="Logo" >
+              <h1 class="logo-text"><span>Pigger</span>2020</h1>
             </div>
-            
-            <i class = "fa fa-bars menu-toggle"></i>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Activites</a></li>
-                <li><a href="#tickets">Tickets & Stuff</a></li>
-                
-                <!--<li><a href="#">Sign Up</a></li>
-                <li><a href="#">Login</a></li> -->
-                <!--
-                <li>
-                    <a href="#">
-                        <i class="fa fa-user"></i>
-                        Joe Orzechowski
-                        <i class="fa fa-chevron-down" style="font-size: .8em"></i>
-                    
-
-                    </a>
-                    <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#" class="logout">Logout</a></li>
-                  
-                    </ul>
-                </li>
-            -->
-          </ul>
+          
+            <span class="open-slide">
+              <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+              </a>
+            </span>
+        
+            <ul class="navbar-nav">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#tickets">Tickets & Stuff</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </nav>
+        
+          <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#tickets">Tickets & Stuff</a>
+            <a href="#">Contact</a>
+          </div>
+        
       </header>
 
       <div class="countdown">
@@ -67,7 +62,7 @@
     
       <section>
         <h1>It's not too early to mark your calanders for Pigger 2020!</h1>
-        <h3>Alcohol, fire, a lake. What could go wrong? - Joe Santos</h3>
+        <h3 class="Joe">Alcohol, fire, a lake. What could go wrong? - Joe Santos</h3>
         <div class="two-col">
           <img src="img/Magnasun_aerial.png" alt="Magnasun_aerial">
           <p>This will be the largest gathering of Blackburn College alumni in history. It all happens on Blackburn Homecoming weekend on September 25 – 27, 2020. 
@@ -165,7 +160,7 @@
       </div>
     
       <div class="parallax5">
-        <div class="heading-sm">
+        <div class="heading-sm" id="tickets">
           Tickets & Stuff
         </div>
     

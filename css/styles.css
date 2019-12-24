@@ -1,117 +1,137 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Candal|Lora&display=swap');
+
 
 * {
   box-sizing: border-box;
 }
 
-/*
-body {
-  padding: 0px;
-  margin: 0px;
-  background: black;
-  font-family: Lora, serif;
-}
-*/
-header {
-  background: black;
-  height: 66px;
-
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%; 
-  z-index: 100;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 150%; /* 180 */
+  color: #666;
+  text-align: center;
 }
 
-header * {
-  color: white;
+.navbar {
+  position: fixed; 
+  z-index: 99;
+  top: 0px;
+  background-color:black;
+  overflow:hidden;
+  height:66px; 
+  width: 100%;
 }
-
-header h1 {
-  display: inline
-  
-}
-
-header .logo {
+.logo {
   float: left; 
   height: inherit;
   margin-left: 2em;
-
 }
 
-header .logo-img {
+.logo-img {
 
   max-width: 100%;
   max-height: 100%;
 }
 
-header .logo-text {
+.logo h1 {
+  display: inline;
+  padding-top: 10px;
+}
+
+.logo-text {
   margin: 9px;
+
   font-family: 'Candal', serif;
   vertical-align: top;
+  color: white;
 }
 
-header .logo-text span {
+.logo-text span {
   color: red;
 }
 
-header ul {
+.navbar a{
+  float:right;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:#ddd;
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed; 
+  z-index:100;
+  top:0;
+  right:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
   float: right;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-
 }
 
-header ul li {
-  float: left;
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+.parallax1 {
+  background: url(first.jpeg);
+  min-height: 100%;
+}
+
+.parallax1  {
   position: relative;
+  opacity: .75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-header ul li ul {
-  position: absolute;
-  top: 66px;
-  right: 0px;
-  width: 180px;
-  display: none;
+
+@media(max-width:675px){
+  .navbar-nav{display:none}
 }
 
-header ul li:hover ul {
-  display: block;
+@media(min-width:675px){
+  .open-slide{display:none}
 }
 
-header ul li ul li {
-  width: 100%;
-}
-
-header ul li ul li a {
-  padding: 10px;
-  color: #444;
-  background: black;
-}
-
-header ul li ul li a.logout {
-  color: red;
-}
-
-header ul li ul li a:hover {
-  background: #2a2b2b;
-}
-header ul li a {
-  display: block;
-  padding: 21px;
-  font-size: 1.1em;
-  text-decoration: none;
-}
-
-header ul li a:hover {
-  background: #2a2b2b;
-  transition: 0.5s;
-}
-
-header .menu-toggle {
-  display: none;
-}
 
 .pigger-collage {
   width: 100%;
@@ -119,26 +139,17 @@ header .menu-toggle {
 
 }
 
-
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  line-height: 180%;
-  color: #666;
-  text-align: center;
-}
 .parallax1 {
   background: url(../img/PiggerHeadCollage4b.jpg);
   min-height: 100%;
 }
 .parallax2 {
   background: url(../img/BUAlumni_2000x1200.jpg);
-  min-height: 60%;
+  min-height: 100%;
 }
 .parallax3 {
   background: url(../img/Mashaan_table.jpg);
-  min-height: 40%;
+  min-height: 90%;
 }
 .parallax4 {
   background: url(../img/BUGirlsSinging_2000x1200.jpg);
@@ -180,17 +191,17 @@ body, html {
 }
 .two-col {
   float: left;
-  width: 42%;
-  padding: 0 4%;
+  width: 50%;  /* 42 */
+  padding: 0 1%; /* 4 */
   text-align: left;
 }
 section {
   overflow: auto;
-  padding: 50px 80px;
+  padding: 50px 40px; /* 80 */
 }
 .dark {
   overflow: auto;
-  padding: 50px 80px;
+  padding: 50px 40px; /* 80 */
   background-color: #323232;
   color: #f2f2f2;
 }
@@ -215,36 +226,6 @@ section {
 }
 
 
-@media (max-width: 768px) {
-  .heading {
-    font-size: 250%;
-  }
-  .heading-sm {
-    font-size: 180%;
-  }
-  .two-col {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    font-size: 100%;
-  }
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("../img/PiggerHeadCollage4.png");
-
-  /* Set a specific height */
-  min-height: 850px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center; 
-  /* background-position: 0% -66px; */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .countdown {
   text-align: center;
   color: white;
@@ -253,12 +234,8 @@ section {
   width: 100%;
   background-color: black;
   top: 66px;
-  z-index: 99;
+  z-index: 98;
 
-}
-
-.resize-txt {
-  color: white;
 }
 
 
@@ -268,19 +245,9 @@ section {
     font-size: 150%;
   
 }
-
-.welcome-txt {
-  display: block;
-  color: white;
-  font-size: 150%;
-  margin-left: 40px;
+.Joe {
+  font-style: italic;
 }
-
-.welcome-hd {
-  text-align: center;
-  color: white;
-}
-
 .grid-container {
   /* display: grid;
   grid-template-columns: 1fr minmax(400px, 1fr); */
@@ -299,36 +266,6 @@ section {
   font-size: 125%;
   text-align: center;
 
-  /*
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
-  */
-}
-
-.schedule {
-  font-size: 125%;
-  text-align: center;
-  color: white;
-}
-
-.schedule-txt {
-  display: inline-block;
-  text-align: left;
-  padding: 3%;
-  
-  /*
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
-  */
-}
-
-.schedule-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .tickets-stuff-hd {
@@ -361,64 +298,16 @@ section {
 
 /* Media queries */
 
-@media only screen and (max-width: 856px) {
+@media only screen and (max-width: 675px) {  /* 856 */
   header {
       position: relative;
       height: 46px;
   }
+
+  .navbar {
+    height: 46px;
+  }
  
-
-  header .logo-text {
-   
-    font-size: 150%;
-  }
-
-  header ul {
-      width: 100%;
-      background: black;
-      max-height: 0px;
-      overflow: hidden;
-  }
-
-  .showing {
-      max-height: 100em; 
-      border: 1px solid red
-  }
-
-  header ul li {
-      width: 100%
-     
-  }
-  header ul li ul {
-      position: static;
-      display: block;
-      width: 100%;
-  }
-  header ul li ul li a {
-      padding: 10px;
-      color: white;
-      background: black;
-      padding-left: 50px;
-  }
-  header ul li ul li a:hover {
-      background: #2f2f2f
-  }
-  header ul li ul li a.logout {
-      color: red;
-  }
-  header .menu-toggle {
-      display: block;
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      font-size: 1.9em;
-  }
-  header .logo {
-     
-      margin-left: .5em;
-  
-  }
-
   .countdown {
     top: 46px;
   }
@@ -426,21 +315,20 @@ section {
     display: inline;
     font-size: 100%;
   }
+  .heading {
+    font-size: 250%;
+  }
+  .heading-sm {
+    font-size: 180%;
+  }
+  .two-col {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    font-size: 90%;
+  }
+
   
 }
 
-/* AUTH PAGES */
-.auth-content {
-  width: 30%;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 5px;
-
-}
-
-
-
-
-    
   
