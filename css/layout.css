@@ -1,0 +1,42 @@
+.products {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+
+}
+
+.product {
+
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 4fr 1fr 1fr 1rem;
+    grid-template-areas: "pic pic"
+                         "desc desc"
+                         "cost cost"
+                         "but but";
+
+
+}
+
+.product .description {
+    grid-area: desc;
+}
+
+.product .image {
+    grid-area: pic;
+}
+.product .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.product .price {
+    grid-area: cost;
+}
+
+.product .button {
+    grid-area: but;
+}
+
