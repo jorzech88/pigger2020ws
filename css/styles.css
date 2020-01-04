@@ -7,7 +7,7 @@
 }
 
 body, html {
-  height: 100%;
+  height: 100%; 
   margin: 0;
   font-family: 'Ubuntu', sans-serif; 
 
@@ -231,16 +231,6 @@ section {
 .Joe {
   font-style: italic;
 }
-.tickets-stuff-hd {
-  text-align: center;
-  display: block;
-  color: white;
-  font-size: 150%;
-  margin-left: 40px;
-}
-
-
-
 
 .wrapper {
   background-color: black;
@@ -267,6 +257,7 @@ section {
 }
 
 .image {
+  position: relative;
   padding: 1rem;
   background-color:black;
 }
@@ -277,6 +268,46 @@ section {
   height: auto; 
  
 }
+
+.image ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.image ul li {
+  padding: 15px;
+  background-color: #1a2b3c;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.image ul li:nth-child(1) {
+  position: absolute;
+  /* top: 550px; */
+  /* left: 25px; */
+
+  bottom: 0px;
+  left: 25px;
+
+
+
+}
+
+.image ul li:nth-child(2) {
+  position: absolute;
+  
+  /* top: 550px; */
+  /* left: 348px; */
+
+  bottom: 0px;
+  left: 330px;
+
+  
+}
+
 
 .price {
   background-color:white;
