@@ -169,38 +169,6 @@
     
       <div class="dark">
         <h3>Tickets & Stuff</h3>
-        <!--
-        <div class="item-container">
-          <div class="item">
-              <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="NXN89BTNX5Q6E">
-                  <table>
-                      <div class="tshirt">
-                          <img src="img/Pigger2020T-400x378.png" alt="Pigger 2020 T-Shirts">
-                          <h4>Pigger 2020 T-Shirt</h4>
-                      </div>
-                      <tr><td><input type="hidden" name="on0" value="Pigger 2020 T-Shirts">Sizes</td></tr><tr><td><select name="os0">
-                          <option value="Small">Small $15.00 USD</option>
-                          <option value="Medium">Medium $15.00 USD</option>
-                          <option value="Large">Large $15.00 USD</option>
-                          <option value="X-Large">X-Large $15.00 USD</option>
-                          <option value="2X-Large">2X-Large $17.00 USD</option>
-                          <option value="3X-Large">3X-Large $17.00 USD</option>
-                      </select> </td></tr>
-                  </table>
-                  <input type="hidden" name="currency_code" value="USD">
-                  <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                  <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-              </form>
-          </div>
-          <div class="item">
-            <img src="img/Pigger2020T-400x378.png" alt="Pigger 2020 T-shirts">
-          </div>
-          <div class="item"></div>
-    
-      </div>   
-    --> 
 
       <div class="wrapper">
         <div class="products">
@@ -217,25 +185,34 @@
                     <h1>Pigger 2020 T-Shirt<br> $15 - $17 ($5 shipping)</h1>
                 </div>
 
-                <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <!--<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"> test -->
+                  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="NXN89BTNX5Q6E">
+                    <!--<input type="hidden" name="hosted_button_id" value="NXN89BTNX5Q6E"> test -->
+                    <input type="hidden" name="hosted_button_id" value="6G8PUCUZXGFKN">
 
                     <table class="price">
-                        <tr><td><input type="hidden" name="on0" value="Pigger 2020 T-Shirts">Available Sizes:</td></tr><tr><td><select name="os0">
+                        <!--<tr><td><input type="hidden" name="on0" value="Pigger 2020 T-Shirts">Available Sizes:</td></tr><tr><td><select name="os0"> test-->
+                          <tr><td><input type="hidden" name="on0" value="Sizes">Available Sizes:</td></tr><tr><td><select name="os0">
+
                             <option value="Small">Small $15.00 USD</option>
                             <option value="Medium">Medium $15.00 USD</option>
                             <option value="Large">Large $15.00 USD</option>
                             <option value="X-Large">X-Large $15.00 USD</option>
                             <option value="2X-Large">2X-Large $17.00 USD</option>
                             <option value="3X-Large">3X-Large $17.00 USD</option>
+                            <option value="4X-Large">4X-Large $17.00 USD</option>  <!-- Not on test site-->
+
                         </select> </td></tr>
                     </table >
                     
                     <div class="button">
                         <input type="hidden" name="currency_code" value="USD">
-                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        <!--<input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> test -->
+                        <!--<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"> test -->
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
                     </div>
 
 
@@ -252,16 +229,21 @@
 
                 <div class="price">
                     <p>Pigger 2020 Ticket $35.00 USD</p>
-                <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                    <!--<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <div class="button">
                     <input type="hidden" name="hosted_button_id" value="SC57P2PYKQCXL">
                     <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form> test -->
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <div class="button">
+                        <input type="hidden" name="hosted_button_id" value="JB899C2VG8YK6">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </div>
                     </form>
-                    </div>
-
-
                 </div>
                 
             </div>
@@ -274,25 +256,28 @@
                 </div>
                 <div class="price">
                     <p>Friday Nite Dance $10.00 USD</p>
-                <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                <!--<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <div class="button">
                     <input type="hidden" name="hosted_button_id" value="643VYRJV6925Y">
                     <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </div>
-                    </form>
-              
+                    </form> test -->
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <div class="button">
+                        <input type="hidden" name="hosted_button_id" value="2BY8VGS8VYBE4">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </div>  
+                    </form>           
                 </div>
             </div>
-
-
         </div>
     </div>
 
-
-
-    <script src="js/countdown.js" async></script>
-    <script src="js/scripts.js" async></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
