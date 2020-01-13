@@ -196,6 +196,10 @@ body, html {
   padding: 0 1%; /* 4 */
   text-align: left;
 }
+.two-col .magnasun_img {
+    float: left;
+    margin: 10px;
+}
 section {
   overflow: auto;
   padding: 50px 40px; /* 80 */
@@ -367,4 +371,121 @@ section {
   
 }
 
+.footer-container {
+
+
+  grid-gap: 10px;
+  background-color: #303036;
+  color: #d3d3d3;
+  padding: 10px;
+
+}
+
+.footer-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: #303036;
+  /* text-align: center; */
+  padding: 20px 0;
+  font-size: 30px;
+  font-size: 1.6rem;
+}
+
+.footer-container > div a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.footer-logo-figure {
+  text-align: center;
+}
+
+
+.about-text {
+  text-align: left;
+  padding: 20px;
+  font-size: 1rem;
   
+}
+
+.footer-logo h3 {
+font-size: 125%;
+}
+
+.footer-container .logo-img {
+
+object-fit: contain;
+
+}
+
+.logo-text {
+margin: 9px;
+
+font-family: 'Candal', serif;
+vertical-align: top;
+color: white;
+}
+
+.footer-container .logo-text span {
+color: red;
+}
+
+.container {
+  margin: auto
+}
+
+
+.footer-links {
+  text-align: left;
+
+}
+
+.footer-links h2 {
+  color: white;
+  text-align: center;
+}
+
+.footer-links ul a {
+  font-size: 1.2em;
+  transition: all .3s;
+}
+.footer-links ul a:hover {
+  color: white;
+  margin-left: 15px;
+  transition: all .3s;
+
+
+}
+.footer-map h2 {
+  color: white;
+  text-align: center;
+}
+
+.footer-bottom {
+  background-color: #343a40;
+  color: #686868;
+  text-align: center;
+  position: absolute;
+  font-size: 1rem;
+}
+
+.contact {
+  font-size: 1.1rem;
+  transition: all .3s;
+}
+
+.contact a:hover {
+  color: white;
+  transition: all .3s;
+}
+.contact .socials a {
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 1.3em;
+  border-radius: 5;
+  transition: all .3s;
+}
+.contact .socials a:hover {
+  border: 1px solid white;
+  color: white;
+  transition: all .3s;
+}
