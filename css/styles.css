@@ -127,7 +127,7 @@ body, html {
 }
 
 .parallax1 {
-  background: url(../img/PiggerHeadCollage4b.jpg);
+  background: url(../img/PiggerHeadCollage6.jpg);
   min-height: 100%;
 }
 .parallax2 {
@@ -154,7 +154,11 @@ body, html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*
+  /* fixed causes problems on iphones. 
+  /*
+  /* background-attachment: fixed; */
+  background-attachment: initial;
 }
 .heading {
   position: absolute;
@@ -406,17 +410,7 @@ object-fit: contain;
 
 }
 
-.logo-text {
-margin: 9px;
 
-font-family: 'Candal', serif;
-vertical-align: top;
-color: white;
-}
-
-.footer-container .logo-text span {
-color: red;
-}
 
 .container {
   margin: auto
