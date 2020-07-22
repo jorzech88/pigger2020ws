@@ -1,6 +1,8 @@
 
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 26, 2020 15:00 GMT -5").getTime();
+var countDownDate = new Date("Sep 25, 2021 15:00 GMT -5").getTime();
+
+//var countDownDate = new Date("Sep 26, 2020 15:00 GMT -5").getTime();
 //var countDownDate = new Date("December 5, 2019 11:40 GMT -6").getTime();
 ( function calcCountDown() {
 
