@@ -225,7 +225,12 @@ section {
 .Joe {
   font-style: italic;
 }
-.magnasun_img {
+/* .magnasun_img {
+  width: 60%;
+  height: auto;
+} 
+ */
+.moose_img {
   width: 60%;
   height: auto;
 } 

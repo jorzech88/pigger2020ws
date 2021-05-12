@@ -10,12 +10,20 @@ function closeSlideMenu(){
 var i = 0;  // start point
 var images = []
 
+/*
 images[0] = "img/2020TShirtJoe.png";
 images[1] = "img/2020TShirtLinda.png";
 images[2] = "img/2020TShirtJan.png";
 images[3] = "img/2020TShirtDenny.png";
 images[4] = "img/2020TShirtGolf.png";
 images[5] = "img/2020TShirt.png";
+*/
+
+images[0] = "img/2021TShirtJoe.png";
+images[1] = "img/2021TShirtBevJan_Monica.png";
+images[2] = "img/2021TShirtLisa.png";
+images[3] = "img/2021TShirtMicheal.png";
+
 
 window.onload = changeImg
 //
