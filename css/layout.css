@@ -16,7 +16,7 @@
                          "cost cost"
                          "but but";
 
-
+                     
 }
 
 .product .description {
@@ -35,6 +35,7 @@
 .product .price {
     grid-area: cost;
 }
+
 
 .product .button {
     grid-area: but;
